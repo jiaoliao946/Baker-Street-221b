@@ -1,1 +1,1 @@
-![coverpage](./assets/BuhCCt-1736503217569-3)
+![coverpage](./assets/BuhCCt.png)
