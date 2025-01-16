@@ -34,7 +34,14 @@
                     hook.doneEach(function() {
                         Waline.init({     //Waline
                             el: '#waline',
-                            serverURL: 'https://baker-street-221b.pages.dev'
+                            serverURL: 'https://baker-street-221b.pages.dev',
+                            locale: {
+                                level0: '石器时代',
+                                level1: '来硬的',
+                                level2: '金光闪闪',
+                                level3: '钻石！',
+                                level4: '深藏不漏',
+                            },
                         });
                     });
                 }
