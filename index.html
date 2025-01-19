@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="zh">
-
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>     <!--解决IE的部分兼容问题-->
     <meta charset="UTF-8"/>     <!--编码-->
@@ -10,8 +9,8 @@
     <meta name="description" content="Guides for everything."/>     <!--描述-->
     <meta name="viewport" content="width=device-width, minimum-scale=0.1"/>     <!--屏幕相关-->
 
-    <link rel="stylesheet" href="//unpkg.com/docsify/themes/vue.css"/>     <!--Docsify样式-->
-    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v2/dist/waline.css"/>     <!--Waline样式-->
+    <link rel="stylesheet" href="https://unpkg.com/docsify/themes/vue.css"/>     <!--Docsify样式-->
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>     <!--Waline样式-->
 
 
 </head>
@@ -20,38 +19,33 @@
     <div id="app">稍等片刻~~~</div>    <!--等待提示-->
     <script>
         window.$docsify = {
-            themeColor: '#619ac3',     //主题色
+            themeColor: "#619ac3",     //主题色
             coverpage: true,     //是否有封面
-            repo: 'https://github.com/jiaoliao946',     //右上角GitHub地址
-
+            repo: "https://github.com/jiaoliao946",     //右上角GitHub地址
             plugins: [     //插件
                 function(hook, vm) {
                     hook.beforeEach(function(content) {
-                        var comment = "<div id='waline'></div>"     //Waline
+                        let comment = "<div id='waline'></div>"     //Waline
                         return content + comment;
                     });
 
                     hook.doneEach(function() {
-                        Waline.init({     //Waline
-                            el: '#waline',
-                            serverURL: 'https://baker-street-221b.pages.dev',
-                            locale: {
-                                level0: '石器时代',
-                                level1: '来硬的',
-                                level2: '金光闪闪',
-                                level3: '钻石！',
-                                level4: '深藏不漏',
-                            },
-                        });
+                        (function(d, s) {
+                            let j, e = d.getElementsByTagName(s)[0];
+                            j = d.createElement(s);
+                            j.type = "module";
+                            j.src = "./js/waline.js";
+                            j.async = true;
+                            e.parentNode.insertBefore(j, e);
+                        })(document, "script");
                     });
                 }
             ]
         }
     </script>
 
-    <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>     <!--Docsify相关JS-->
-    <script src="//unpkg.com/@waline/client@v2/dist/waline.js"></script>     <!--Waline相关JS-->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>     <!--Docsify相关JS-->
+
     
 </body>
-
 </html>
