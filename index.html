@@ -29,7 +29,7 @@
                         return content + comment;
                     });
 
-                    hook.doneEach(function() {
+                    hook.mounted(function() {
                         (function(d, s) {
                             let j, e = d.getElementsByTagName(s)[0];
                             j = d.createElement(s);

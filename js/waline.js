@@ -2,7 +2,7 @@ import { init } from "https://unpkg.com/@waline/client@v3/dist/waline.js";
 window.onload = function waline() {
     init({
         el: "#waline",
-        serverURL: "https://baker-street-221b.pages.dev",
+        serverURL: "http://localhost:3000",
         locale: {
             level0: "石器时代",
             level1: "来硬的",
