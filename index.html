@@ -11,8 +11,6 @@
 
     <link rel="stylesheet" href="https://unpkg.com/docsify/themes/vue.css"/>     <!--Docsify样式-->
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>     <!--Waline样式-->
-
-
 </head>
 
 <body>
@@ -34,7 +32,7 @@
                             let j, e = d.getElementsByTagName(s)[0];
                             j = d.createElement(s);
                             j.type = "module";
-                            j.src = "./js/waline.js";
+                            j.src = "./js/waline/client.js";
                             j.async = true;
                             e.parentNode.insertBefore(j, e);
                         })(document, "script");
@@ -45,7 +43,5 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>     <!--Docsify相关JS-->
-
-    
 </body>
 </html>

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@waline/vercel": "^1.32.3",
+    "dotenv": "^16.4.7",
+    "thinkjs": "^3.2.15"
+  }
+}
