@@ -2,14 +2,14 @@ import { init } from "https://unpkg.com/@waline/client@v3/dist/waline.js";
 window.onload = function waline() {
     init({
         el: "#waline",
-        serverURL: "http://127.0.0.1:8360",
+        serverURL: "http://localhost:443",
         reaction: [
             "../assets/icons/waline/reactions/like.png",
             "../assets/icons/waline/reactions/good.png",
             "../assets/icons/waline/reactions/question.png",
             "../assets/icons/waline/reactions/melon.png",
             "../assets/icons/waline/reactions/boring.png",
-            "../assets/icons/waline/reactions/wrong.png"
+            "../assets/icons/waline/reactions/wrong.png",
         ],
         locale: {
             reactionTitle: "本文如何？",
@@ -25,7 +25,7 @@ window.onload = function waline() {
             level1: "来硬的",
             level2: "金光闪闪",
             level3: "钻石！",
-            level4: "深藏不露"
+            level4: "深藏不露",
         }
     });
 }
