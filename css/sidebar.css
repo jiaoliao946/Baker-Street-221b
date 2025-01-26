@@ -1,0 +1,32 @@
+.logo {
+    position: sticky;
+    left: 15%;
+    width: 10%;
+    height: 10%;
+    cursor: pointer;
+}
+
+.sidebar-title {
+    position: absolute;
+    right: 25%;
+    text-align: center;
+    font-size: 170%;
+    font-family: title2;
+    text-decoration: none;
+}
+
+.sidebar-subtitle {
+    font-size: 18px;
+    font-family: title3;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: title2;
+    src: url("../assets/fonts/title2.ttf")
+}
+
+@font-face {
+    font-family: title3;
+    src: url("../assets/fonts/title3.ttf")
+}

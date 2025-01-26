@@ -1,0 +1,8 @@
+h1 {
+    font-family: title1;
+}
+
+@font-face {
+    font-family: title1;
+    src: url("../assets/fonts/title1.ttf")
+}

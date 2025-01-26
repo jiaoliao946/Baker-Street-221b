@@ -4,45 +4,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>     <!--解决IE的部分兼容问题-->
     <meta charset="UTF-8"/>     <!--编码-->
 
-    <link rel="icon" type="image/png" href="./assets/icons/icon.png"/>     <!--图标-->
+    <link rel="icon" type="image/png" href="./assets/icons/logo.png"/>     <!--图标-->
     <title>贝克街221号</title>     <!--标题-->
     <meta name="description" content="Guides for everything."/>     <!--描述-->
     <meta name="viewport" content="width=device-width, minimum-scale=0.1"/>     <!--屏幕相关-->
 
     <link rel="stylesheet" href="https://unpkg.com/docsify/themes/vue.css"/>     <!--Docsify样式-->
-    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>     <!--Waline样式-->
+    <link rel="stylesheet" href="./css/sidebar.css"/>     <!--侧边栏样式-->
+    <link rel="stylesheet" href="./css/article.css"/>     <!--文章样式-->
+    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>     <!--Waline默认样式-->
+    <link rel="stylesheet" href="./css/waline.css"/>     <!--Waline自定义样式-->
 </head>
 
 <body>
     <div id="app">稍等片刻~~~</div>    <!--等待提示-->
     <script>
         window.$docsify = {
-            routerMode: 'history',     //将路由模式从hash换为history，从而去除地址栏自动添加的#
+            routerMode: "history",     //将路由模式从hash换为history，从而去除地址栏自动添加的#
             themeColor: "#619ac3",     //主题色
-            coverpage: true,     //是否有封面
-            repo: "https://github.com/jiaoliao946",     //右上角GitHub地址
-            plugins: [     //插件
-                function(hook, vm) {
-                    hook.beforeEach(function(content) {
-                        let comment = "<div id='waline'></div>"     //Waline
-                        return content + comment;
-                    });
-
-                    hook.mounted(function() {
-                        (function(d, s) {
-                            let j, e = d.getElementsByTagName(s)[0];
-                            j = d.createElement(s);
-                            j.type = "module";
-                            j.src = "./js/waline-client.js";
-                            j.async = true;
-                            e.parentNode.insertBefore(j, e);
-                        })(document, "script");
-                    });
-                }
-            ]
+            coverpage: true,     //加载封面
+            onlyCover: true,     //仅封面作为首页
+            loadSidebar: true,     //加载侧边栏
+            formatUpdated: "{YYYY} {MM}/{DD} {HH}:{mm}",     //文章更新时间的格式
+            repo: "https://github.com/jiaoliao946/Baker-Street-221b",     //右上角GitHub地址
         }
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>     <!--Docsify相关JS-->
+    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>     <!--Docsify-->
+    <script src="./plugins/global.js"></script>     <!--全局变量-->
+    <script src="./plugins/sidebar.js"></script>     <!--侧边栏-->
+    <script type="module" src="./plugins/waline/waline.js"></script>     <!--Waline-->
+    <script src="./plugins/waline/reaction.js"></script>     <!--Waline reaction声音-->
 </body>
 </html>
