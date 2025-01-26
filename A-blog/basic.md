@@ -1,1 +1,1 @@
-# 基于Docsify、GitHub和Cloudflare Pages的博客搭建与部署
+# 基于Docsify、GitHub和Cloudflare Pages的静态博客搭建与部署
