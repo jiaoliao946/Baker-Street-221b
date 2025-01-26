@@ -1,12 +1,15 @@
-(function(){
+(function(d){
     let main = function(hook) {
         hook.doneEach(function() {
             if(path == "/") return ;
-            const logo = document.querySelector(".logo");
-            logo.onclick = () => { location.href = "." };     //点击logo
+            const logo = document.createElement("img");
+            logo.className = "logo";
+            logo.src = root + "/assets/icons/logo.png";
+            d.querySelector(".sidebar-title").before(logo);
+            logo.onclick = () => { location.href = root };     //点击logo
         });
     };
 
     $docsify = $docsify || {};
     $docsify.plugins = [].concat($docsify.plugins || [], main);
-})();
+})(document);

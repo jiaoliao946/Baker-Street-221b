@@ -15,7 +15,7 @@ import { init } from "https://unpkg.com/@waline/client@v3/dist/waline.js";
             init({
                 el: "#waline",
                 serverURL: "https://jiaoliao946-waline.netlify.app/.netlify/functions/comment",
-                path: root + path;
+                path: root + path,
                 reaction: [
                     root + "/assets/icons/waline/reaction0.png",
                     root + "/assets/icons/waline/reaction1.png",
@@ -40,6 +40,9 @@ import { init } from "https://unpkg.com/@waline/client@v3/dist/waline.js";
                     level3: "钻石！",
                     level4: "深藏不露",
                 },
+                emoji: [
+                    "https://unpkg.com/@waline/emojis@1.2.0/bilibili"
+                ],
                 login: "force"
             });
             const finished = new CustomEvent("finished");     //定义事件"finished"
