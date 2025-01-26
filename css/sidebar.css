@@ -8,7 +8,9 @@
 
 .sidebar-title {
     position: absolute;
-    right: 25%;
+    left: 50%;
+    translate: -50%;
+    white-space: nowrap;
     text-align: center;
     font-size: 170%;
     font-family: title2;
