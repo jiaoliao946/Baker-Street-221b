@@ -1,0 +1,39 @@
+@font-face {
+    font-family: title0-zh;
+    src: url("/assets/fonts/zh/title0.ttf")
+}
+
+@font-face {
+    font-family: title1-zh;
+    src: url("/assets/fonts/zh/title1.ttf")
+}
+
+@font-face {
+    font-family: title2-zh;
+    src: url("/assets/fonts/zh/title2.ttf")
+}
+
+@font-face {
+    font-family: title3-zh;
+    src: url("/assets/fonts/zh/title3.ttf")
+}
+
+@font-face {
+    font-family: title0-en;
+    src: url("/assets/fonts/en/title0.otf")
+}
+
+@font-face {
+    font-family: title1-en;
+    src: url("/assets/fonts/en/title1.otf")
+}
+
+@font-face {
+    font-family: title2-en;
+    src: url("/assets/fonts/en/title2.otf")
+}
+
+@font-face {
+    font-family: title3-en;
+    src: url("/assets/fonts/en/title3.otf")
+}

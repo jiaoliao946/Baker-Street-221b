@@ -5,7 +5,7 @@
             const logo = document.createElement("img");
             logo.className = "logo";
             logo.src = root + "/assets/icons/logo.png";
-            d.querySelector(".sidebar-title").before(logo);
+            d.querySelector(".sidebar-nav > ul > li > a").prepend(logo);
             logo.onclick = () => { location.href = root };     //点击logo
         });
     };

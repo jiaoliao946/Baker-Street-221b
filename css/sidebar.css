@@ -1,34 +1,22 @@
 .logo {
-    position: sticky;
-    left: 15%;
     width: 10%;
     height: 10%;
     cursor: pointer;
 }
 
-.sidebar-title {
-    position: absolute;
-    left: 50%;
-    translate: -50%;
-    white-space: nowrap;
-    text-align: center;
-    font-size: 170%;
-    font-family: title2;
-    text-decoration: none;
+.sidebar-nav > ul > li > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: title2-en, title2-zh;
 }
 
-.sidebar-subtitle {
+.sidebar-nav > ul > li > ul > li > a {
     font-size: 18px;
-    font-family: title3;
-    text-decoration: none;
+    font-family: title3-en, title3-zh;
 }
 
-@font-face {
-    font-family: title2;
-    src: url("../assets/fonts/title2.ttf")
-}
-
-@font-face {
-    font-family: title3;
-    src: url("../assets/fonts/title3.ttf")
+.sidebar-nav > ul > li > ul > li > ul {
+    font-family: title3-en, title3-zh;
 }

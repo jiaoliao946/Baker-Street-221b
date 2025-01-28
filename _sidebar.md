@@ -1,3 +1,4 @@
-[贝克街221号](./README ':class=sidebar-title')
+- [贝克街221号](./README)
+    - [静态博客](/Blog/README.md)
+    - [MC1.12.2MOD开发](/MCMOD12/README.md)
 
-[搭建个人博客](./A-blog/README.md ':class=sidebar-subtitle')

@@ -1,8 +1,20 @@
 h1 {
-    font-family: title1;
+    font-family: title1-en, title1-zh;
 }
 
-@font-face {
-    font-family: title1;
-    src: url("../assets/fonts/title1.ttf")
+h2 {
+    font-family: title2-en, title2-zh;
+}
+
+h3 {
+    font-family: title3-en, title3-zh;
+}
+
+ol {
+    font-family: title3-en, title3-zh;
+    font-weight: bold;
+}
+
+#main > p {
+    text-indent: 1.75em;     /*正文首行缩进*/
 }

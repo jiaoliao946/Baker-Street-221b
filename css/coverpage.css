@@ -1,0 +1,8 @@
+.cover-main p:first-child {
+    font-size: 100px;
+    font-family: title0-en, title0-zh;
+}
+
+.cover-main p:last-child {
+    font-family: title3-en, title3-zh;
+}
