@@ -2,3 +2,7 @@
     --waline-theme-color: #619ac3;
     --waline-active-color: #8abcd1;
 }
+
+.wl-reaction, .wl-panel, .wl-meta-head, .wl-empty, .wl-power {
+    font-family: title3-en, title3-zh;
+}

@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="/css/article.css"/>     <!--文章-->
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>     <!--Waline默认-->
     <link rel="stylesheet" href="/css/waline.css"/>     <!--Waline自定义-->
+    <link rel="stylesheet" href="/css/plugin.css"/>     <!--大部分插件-->
 </head>
 
 <body>
@@ -29,8 +30,21 @@
             loadSidebar: true,     //加载侧边栏
             subMaxLevel: 3,     //侧边栏目录最大可显示标题层级
             repo: "https://github.com/jiaoliao946/Baker-Street-221b",     //右上角GitHub地址
-            alias: {
+            notFoundPage: true,     //404页面
+            alias: {     //地址重定向
                 "(.*)#": "$1"
+            },
+
+            copyCode: {     //代码复制按钮
+                buttonText: "点击复制",
+                errorText: "复制失败",
+                successText: "复制成功"
+            },
+            pagination: {     //前后章节导航
+                previousText: "上一章节",
+                nextText: "下一章节",
+                crossChapter: true,
+                crossChapterText: true
             }
         }
     </script>
@@ -38,7 +52,9 @@
     <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>     <!--Docsify-->
     <script src="/plugins/global.js"></script>     <!--全局-->
     <script src="/plugins/sidebar.js"></script>     <!--侧边栏-->
+    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>     <!--代码复制按钮-->
     <script type="module" src="/plugins/waline/waline.js"></script>     <!--Waline-->
     <script src="/plugins/waline/reaction.js"></script>     <!--Waline reaction声音-->
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>     <!--前后章节导航-->
 </body>
 </html>

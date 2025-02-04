@@ -1,4 +1,5 @@
 - [贝克街221号](./README)
-    - [静态博客](/Blog/README.md)
-    - [MC1.12.2MOD开发](/MCMOD12/README.md)
-
+    - [静态博客搭建](Blog/README.md)
+    - [MC1.12.2模组开发](MCMod12/README.md)
+    - [MC1.12.2整合包开发](MCModpack12/README.md)
+    - [通用](General/README.md)

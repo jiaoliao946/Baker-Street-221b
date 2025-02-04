@@ -1,13 +1,13 @@
 .logo {
-    width: 10%;
-    height: 10%;
+    position: absolute;
+    translate: -100%;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
 .sidebar-nav > ul > li > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     font-size: 25px;
     font-family: title2-en, title2-zh;
 }

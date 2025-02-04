@@ -1,0 +1,4 @@
+- [工作准备](./MCMod12/Pre/README.md)
+    - [环境搭建](MCMod12/Pre/environment.md)
+    - [Java基础知识](MCMod12/Pre/java.md)
+    - [模组基础知识](MCMod12/Pre/mod.md)
