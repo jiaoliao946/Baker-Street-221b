@@ -1,60 +1,96 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh">     <!--语言-->
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"/>     <!--解决IE的部分兼容问题-->
     <meta charset="UTF-8"/>     <!--编码-->
-
-    <link rel="icon" type="image/png" href="/assets/icons/logo.png"/>     <!--图标-->
-    <title>贝克街221号</title>     <!--标题-->
-    <meta name="description" content="Guides for everything."/>     <!--描述-->
     <meta name="viewport" content="width=device-width, minimum-scale=0.1"/>     <!--屏幕相关-->
 
-    <link rel="stylesheet" href="https://unpkg.com/docsify/themes/vue.css"/>     <!--Docsify-->
+    <link rel="icon" type="image" href="/assets/icons/logo.svg"/>     <!--logo-->
+    <title>贝克街221号</title>     <!--标题-->
+    <meta name="creator" content="jiaoliao946"/>     <!--创建者-->
+    <meta name="publisher" content="jiaoliao946"/>     <!--出版者-->
+    <meta name="description" content="Guides for everything."/>     <!--描述（用于浏览器收藏）-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/vue.min.css"/>     <!--Docsify-->
     <link rel="stylesheet" href="/css/global.css"/>     <!--全局-->
+    <link rel="stylesheet" href="/css/navbar.css"/>     <!--导航栏-->
     <link rel="stylesheet" href="/css/coverpage.css"/>     <!--封面-->
-    <link rel="stylesheet" href="/css/sidebar.css"/>     <!--侧边栏-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css"/>     <!--侧边栏默认-->
+    <link rel="stylesheet" href="/css/sidebar.css"/>     <!--侧边栏自定义-->
     <link rel="stylesheet" href="/css/article.css"/>     <!--文章-->
+    <link rel="stylesheet" href="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/light.css">     <!--目录-->
     <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>     <!--Waline默认-->
     <link rel="stylesheet" href="/css/waline.css"/>     <!--Waline自定义-->
     <link rel="stylesheet" href="/css/plugin.css"/>     <!--大部分插件-->
+
+    <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.3.0/dist/dotlottie-player.mjs"></script>     <!--DotLottie-->
 </head>
 
 <body>
     <div id="app">稍等片刻~~~</div>    <!--等待提示-->
     <script>
-        window.$docsify = {
+        $docsify = {
             routerMode: "history",     //将路由模式从hash换为history，从而去除地址栏自动添加的#
             themeColor: "#619ac3",     //主题色
             coverpage: true,     //加载封面
             onlyCover: true,     //仅封面作为首页
             loadSidebar: true,     //加载侧边栏
-            subMaxLevel: 3,     //侧边栏目录最大可显示标题层级
-            repo: "https://github.com/jiaoliao946/Baker-Street-221b",     //右上角GitHub地址
+            subMaxLevel: 2,     //侧边栏显示的最大标题级数
+            auto2top: true,     //自动到文章开头
             notFoundPage: true,     //404页面
             alias: {     //地址重定向
+                ".*/_sidebar.md": "_sidebar.md",
                 "(.*)#": "$1"
             },
 
+            search: {     //搜索栏
+                placeholder: "点击搜索",
+                noData: "没有找到",
+                paths: [
+                    "/README",
+                    "Blog/README",
+                    "Blog/Pre/init",
+                    "Blog/Waline/init",
+                    "General/README",
+                    "General/Git/README",
+                    "MCMod12/README",
+                    "MCMod12/Pre/environment",
+                    "MCMod12/Pre/java",
+                    "MCMod12/Pre/mod",
+                    "MCModpack12/README"
+                ]
+            },
+            searchHighlightColor: "#fbcd31",     //搜索高亮颜色
+            sidebarDisplayLevel: 0,     //侧边栏初始展开层数
+            toc: {
+                tocMaxLevel: 3,
+                target: "h2, h3, h4"
+            },
             copyCode: {     //代码复制按钮
                 buttonText: "点击复制",
                 errorText: "复制失败",
                 successText: "复制成功"
             },
-            pagination: {     //前后章节导航
-                previousText: "上一章节",
-                nextText: "下一章节",
+            pagination: {     //前后文章导航
+                previousText: "上一篇文章",
+                nextText: "下一篇文章",
                 crossChapter: true,
                 crossChapterText: true
             }
         }
     </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>     <!--Docsify-->
+    <script src="/plugins/change/docsify.js"></script>     <!--Docsify-->
     <script src="/plugins/global.js"></script>     <!--全局-->
-    <script src="/plugins/sidebar.js"></script>     <!--侧边栏-->
-    <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>     <!--代码复制按钮-->
-    <script type="module" src="/plugins/waline/waline.js"></script>     <!--Waline-->
-    <script src="/plugins/waline/reaction.js"></script>     <!--Waline reaction声音-->
-    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>     <!--前后章节导航-->
+    <script src="/plugins/navbar.js"></script>     <!--导航栏-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/plugins/search.min.js"></script>     <!--搜索栏-->
+    <script src="/plugins/change/search-highlighter.js"></script>     <!--搜索高亮（改）-->
+    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>     <!--侧边栏-->
+    <script src="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>     <!--目录-->
+    <script src="/plugins/article.js"></script>     <!--上传时间、更新时间、访问次数、字数、阅读时长和回到开头-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify-copy-code/3.0.0/docsify-copy-code.min.js"></script>     <!--代码复制按钮-->
+    <script type="module" src="/plugins/waline.js"></script>     <!--Waline-->
+    <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>     <!--前后文章导航-->
+    <script src="//unpkg.com/docsify-slides/dist/docsify-slides.min.js"></script>     <!--前后文章导航栏-->
 </body>
 </html>

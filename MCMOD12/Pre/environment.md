@@ -1,6 +1,6 @@
 # 基于JDK、Forge MDK和IntelliJ IDEA搭建Minecraft 1.12.2 forge模组开发环境
 
-> 由于[Cleanroom](https://www.mcmod.cn/class/9689.html)的MDK和Gradle插件仍处于开发中，暂时只考虑搭建原版forge的开发环境，后续可能会更改。
+> 大部分内容暂时只保证支持Windows系统，且由于[Cleanroom](https://www.mcmod.cn/class/9689.html)的MDK和Gradle插件仍处于开发中，暂时只考虑搭建原版forge的开发环境，后续可能会更改。
 
 ## 安装JDK
 

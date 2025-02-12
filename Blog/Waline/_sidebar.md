@@ -1,2 +1,0 @@
-- [评论区搭建](./Blog/Waline/README.md)
-    - [初始化与部署](Blog/Waline/init.md)

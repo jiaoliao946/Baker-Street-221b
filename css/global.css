@@ -1,39 +1,48 @@
+#app {
+    font-family: title2-en, title2-zh, cursive;
+}
+
+main {
+    margin-top: 45px;
+    transition: margin-top 0.5s;
+}
+
 @font-face {
     font-family: title0-zh;
-    src: url("/assets/fonts/zh/title0.ttf")
+    src: url("/assets/fonts/zh/title0.ttf");
 }
 
 @font-face {
     font-family: title1-zh;
-    src: url("/assets/fonts/zh/title1.ttf")
+    src: url("/assets/fonts/zh/title1.ttf");
 }
 
 @font-face {
     font-family: title2-zh;
-    src: url("/assets/fonts/zh/title2.ttf")
+    src: url("/assets/fonts/zh/title2.ttf");
 }
 
 @font-face {
     font-family: title3-zh;
-    src: url("/assets/fonts/zh/title3.ttf")
+    src: url("/assets/fonts/zh/title3.ttf");
 }
 
 @font-face {
     font-family: title0-en;
-    src: url("/assets/fonts/en/title0.otf")
+    src: url("/assets/fonts/en/title0.otf");
 }
 
 @font-face {
     font-family: title1-en;
-    src: url("/assets/fonts/en/title1.otf")
+    src: url("/assets/fonts/en/title1.otf");
 }
 
 @font-face {
     font-family: title2-en;
-    src: url("/assets/fonts/en/title2.otf")
+    src: url("/assets/fonts/en/title2.otf");
 }
 
 @font-face {
     font-family: title3-en;
-    src: url("/assets/fonts/en/title3.otf")
+    src: url("/assets/fonts/en/title3.otf");
 }

@@ -1,0 +1,115 @@
+#navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    transition: top 0.5s;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: title3-en, title3-zh, cursive;
+}
+
+.navbar-coverpage {
+    background-color: rgba(97, 154, 195, 0.32);
+    box-shadow: 0 0.5px 5px #93b5cf;
+}
+
+.navbar-article {
+    background-color: white;
+}
+
+#title {
+    position: absolute;
+    left: 1%;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-family: title2-en, title2-zh, cursive;
+    text-decoration: none;
+}
+
+#logo {
+    width: 30px;
+    height: 30px;
+}
+
+#navbar > ul {
+    display: flex;
+    height: 100%;
+    column-gap: 20px;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav:nth-of-type(4) {
+    position: absolute;
+    right: 1%;
+    height: 100%;
+}
+
+.nav:hover {
+    border-radius: 10%;
+}
+
+.navbar-coverpage .nav:hover {
+    background-color: #93b5cf;
+}
+
+.navbar-article .nav:hover {
+    background-color: whitesmoke;
+}
+
+.navIcon {
+    width: 20px;
+    height: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav > ul {
+    position: absolute;
+    top: 85%;
+    display: none;
+    background-color: whitesmoke;
+    border-radius: 10%;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+.nav > ul > li::marker {
+    content: none;
+}
+
+.navbar-toggle {
+    position: fixed;
+    z-index: 1;
+    top: 50px;
+    transition: top 0.5s;
+    right: 0;
+    background-color: hsla(0, 0%, 100%, .8);
+    padding: 10px;
+    border: 0;
+    cursor: pointer;
+}
+
+.navbar-toggle:hover {
+    opacity: .4;
+}
+
+.navbar-toggle span {
+    width: 16px;
+    height: 2px;
+    margin-bottom: 4px;
+    display: block;
+    background-color: var(--theme-color, #42b983);
+
+}

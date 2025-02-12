@@ -1,11 +1,36 @@
-.pagination-item-label {
+.docsify-copy-code-button {     /*代码复制按钮*/
     font-family: title3-en, title3-zh;
 }
 
-.pagination-item-title {
-    font-family: title2-en, title2-zh;
+.pagination-item-label {     /*前后文章导航（说明文字）*/
+    font-family: title3-en, title3-zh, cursive;
 }
 
-.docsify-copy-code-button {
-    font-family: title3-en, title3-zh;
+.pagination-item-title {     /*前后文章导航（文章标题）*/
+    font-family: title2-en, title2-zh, cursive;
+}
+
+.docsify-pagination-container {     /*前后文章导航栏*/
+    z-index: 1;
+}
+
+aside.toc-nav {
+    top: 90px;
+    transition: top 0.5s;
+}
+
+.page_toc {
+    font-family: title3-en, title3-zh, cursive;
+}
+
+.page_toc div.active {
+    --sidebar-nav-link-color--active: #619ac3;
+}
+
+.page_toc div[class^="lv"] a span {
+    --sidebar-nav-link-color: #34495e;
+}
+
+.page_toc div[class^="lv"] a:hover span {
+    --sidebar-nav-link-color--active: #619ac3;
 }

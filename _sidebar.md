@@ -1,5 +1,14 @@
-- [贝克街221号](./README)
-    - [静态博客搭建](Blog/README.md)
-    - [MC1.12.2模组开发](MCMod12/README.md)
-    - [MC1.12.2整合包开发](MCModpack12/README.md)
-    - [通用](General/README.md)
+- [静态博客搭建](Blog/README)
+    - 工作准备
+        - [初始化与部署](Blog/Pre/init)
+    - 评论区搭建
+        - [初始化与部署](Blog/Waline/init)
+- [MC1.12.2模组开发](MCMod12/README)
+    - 工作准备
+        - [环境搭建](MCMod12/Pre/environment)
+        - [Java基础知识](MCMod12/Pre/java)
+        - [模组基础知识](MCMod12/Pre/mod)
+- [MC1.12.2整合包开发](MCModpack12/README)
+- [通用](General/README)
+    - [Git](General/Git/README)
+        - [Github](General/Git/github)
