@@ -3,12 +3,14 @@
         - [初始化与部署](Blog/Pre/init)
     - 评论区搭建
         - [初始化与部署](Blog/Waline/init)
-- [MC1.12.2模组开发](MCMod12/README)
-    - 工作准备
-        - [环境搭建](MCMod12/Pre/environment)
-        - [Java基础知识](MCMod12/Pre/java)
-        - [模组基础知识](MCMod12/Pre/mod)
-- [MC1.12.2整合包开发](MCModpack12/README)
-- [通用](General/README)
+- [MC](MC/README)
+    - [1.12.2模组开发](MC/Mod12/README)
+        - 工作准备
+            - [环境搭建](MC/Mod12/Pre/environment)
+            - [Java基础知识](MC/Mod12/Pre/java)
+            - [模组基础知识](MC/Mod12/Pre/mod)
+    - [1.12.2整合包开发](MC/Modpack12/README)
+- [通用工具](General/README)
     - [Git](General/Git/README)
+        - [Git](General/Git/git)
         - [Github](General/Git/github)

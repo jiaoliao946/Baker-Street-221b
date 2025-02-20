@@ -1,27 +1,23 @@
-.sidebar, .sidebar-toggle {
+.sidebar, .sidebar-toggle {     /*侧边栏和侧边栏切换按钮，方便导航栏布局，否则需要滑动一次后侧边栏切换按钮才会显示*/
     position: fixed;
 }
 
-.sidebar {
+.sidebar {     /*侧边栏，方便导航栏布局*/
     top: auto;
     bottom: auto;
     height: 100%;
 }
 
-.sidebar-nav > ul > li > a {
+.sidebar-nav > ul > li > a {     /*系列文章标题*/
     font-size: 18px;
     font-family: title2-en, title2-zh, cursive;
 }
 
-.sidebar-nav > ul > li > ul {
+.sidebar-nav > ul > li > ul {     /*章节标题*/
     font-size: 16px;
     font-family: title3-en, title3-zh, cursive;
 }
 
-.sidebar-nav > ul > li > ul > li > a {
+.sidebar-nav > ul > li > ul > li > a {     /*保证通用系列文章中章节字体大小为16px，若只有上一规则，会被vue.css覆盖*/
     font-size: 16px;
-}
-
-.file {
-    font-size: 14px;
 }

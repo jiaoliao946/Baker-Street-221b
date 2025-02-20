@@ -17,4 +17,5 @@
 2. [Git](https://git-scm.com/)；
 3. [Github](https://git-scm.com/)；
 4. [MC百科](https://www.mcmod.cn/)；
-5. [Minecraft Wiki](https://minecraft.wiki/)。
+5. [Minecraft Wiki](https://minecraft.wiki/)；
+6. [Minecraft中文Wiki](https://zh.minecraft.wiki/)。

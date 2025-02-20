@@ -1,21 +1,8 @@
-.cover-main p:first-child {
+.cover-main p:first-child {     /*博客标题*/
     font-size: 100px;
     font-family: title0-en, title0-zh, cursive;
 }
 
-.cover-main p:last-child {
+.cover-main p:last-child {     /*快捷链接*/
     font-family: title3-en, title3-zh, cursive;
-}
-
-footer {
-    position: fixed;
-    right: 1%;
-    bottom: 0;
-    display: flex;
-    font-size: 12px;
-    font-family: title3-en, title3-zh, cursive;
-}
-
-section.cover footer a {
-    color: #619ac3;
 }

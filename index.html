@@ -9,22 +9,23 @@
     <title>贝克街221号</title>     <!--标题-->
     <meta name="creator" content="jiaoliao946"/>     <!--创建者-->
     <meta name="publisher" content="jiaoliao946"/>     <!--出版者-->
-    <meta name="description" content="Guides for everything."/>     <!--描述（用于浏览器收藏）-->
+    <meta name="description" content="Guides for everything."/>     <!--描述-->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/themes/vue.min.css"/>     <!--Docsify-->
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"/>     <!--Docsify-->
     <link rel="stylesheet" href="/css/global.css"/>     <!--全局-->
     <link rel="stylesheet" href="/css/navbar.css"/>     <!--导航栏-->
     <link rel="stylesheet" href="/css/coverpage.css"/>     <!--封面-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar-folder.min.css"/>     <!--侧边栏默认-->
-    <link rel="stylesheet" href="/css/sidebar.css"/>     <!--侧边栏自定义-->
-    <link rel="stylesheet" href="/css/article.css"/>     <!--文章-->
-    <link rel="stylesheet" href="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/light.css">     <!--目录-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"/>     <!--KaTex-->
-    <link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css"/>     <!--Waline默认-->
+    <link rel="stylesheet" href="//unpkg.com/docsify-sidebar-collapse/dist/sidebar-folder.min.css"/>     <!--优化侧边栏默认-->
+    <link rel="stylesheet" href="/css/sidebar.css"/>     <!--优化侧边栏自定义-->
+    <link rel="stylesheet" href="/css/content.css"/>     <!--内容-->
+    <link rel="stylesheet" href="//unpkg.com/docsify-plugin-toc/dist/light.css">     <!--目录-->
+    <link rel="stylesheet" href="//unpkg.com/katex/dist/katex.min.css"/>     <!--KaTex-->
+    <link rel="stylesheet" href="//unpkg.com/font-awesome/css/font-awesome.css"/>     <!--Font Awesome-->
+    <link rel="stylesheet" href="//unpkg.com/@waline/client@v3/dist/waline.css"/>     <!--Waline默认-->
     <link rel="stylesheet" href="/css/waline.css"/>     <!--Waline自定义-->
     <link rel="stylesheet" href="/css/plugin.css"/>     <!--大部分插件-->
 
-    <script type="module" src="https://unpkg.com/@dotlottie/player-component@2.3.0/dist/dotlottie-player.mjs"></script>     <!--DotLottie-->
+    <script type="module" src="//unpkg.com/@dotlottie/player-component/dist/dotlottie-player.mjs"></script>     <!--DotLottie-->
 </head>
 
 <body>
@@ -40,13 +41,15 @@
             auto2top: true,     //自动到文章开头
             notFoundPage: true,     //404页面
             alias: {     //地址重定向
-                ".*/_sidebar.md": "_sidebar.md",
-                "(.*)#": "$1"
+                ".*/_sidebar.md": "_sidebar.md",     //侧边栏
+                "(.*)#": "$1"     //修复登录Waline后跳转出错
             },
 
             search: {     //搜索栏
                 placeholder: "点击搜索",
                 noData: "没有找到",
+                //各种文章路径，从而第一次进入网站就可以在所有文章内搜索
+                //因为使用了优化的侧边栏，所以虽然侧边栏有所有文章，但是自动读取路径无用
                 paths: [
                     "/README",
                     "Blog/README",
@@ -54,18 +57,43 @@
                     "Blog/Waline/init",
                     "General/README",
                     "General/Git/README",
-                    "MCMod12/README",
-                    "MCMod12/Pre/environment",
-                    "MCMod12/Pre/java",
-                    "MCMod12/Pre/mod",
-                    "MCModpack12/README"
+                    "General/Git/git",
+                    "General/Git/github",
+                    "MC/README",
+                    "MC/Mod12/README",
+                    "MC/Mod12/Pre/environment",
+                    "MC/Mod12/Pre/java",
+                    "MC/Mod12/Pre/mod",
+                    "MC/Modpack12/README"
                 ]
             },
             searchHighlightColor: "#fbcd31",     //搜索高亮颜色
             sidebarDisplayLevel: 0,     //侧边栏初始展开层数
-            toc: {
-                tocMaxLevel: 3,
-                target: "h2, h3, h4"
+            toc: {     //目录
+                tocMaxLevel: 3,     //目录最大级数
+                target: "h2, h3, h4"     //显示于目录的元素
+            },
+            "flexible-alerts": {     //告示
+                style: "flat",     //风格为一整块
+                note: {     //通知
+                    icon: "fa fa-bullhorn",
+                    label: "通知"
+                },
+                tip: {     //提示
+                    label: "提示"
+                },
+                important: {     //重要
+                    icon: "fa fa-star",
+                    label: "重要"
+                },
+                warning: {     //注意
+                    label: "注意"
+                },
+                caution: {     //警告
+                    icon: "fa fa-ban",
+                    label: "警告",
+                    className: "attention"     //用于提供颜色
+                }
             },
             copyCode: {     //代码复制按钮
                 buttonText: "点击复制",
@@ -84,15 +112,17 @@
     <script src="/plugins/change/docsify.js"></script>     <!--Docsify-->
     <script src="/plugins/global.js"></script>     <!--全局-->
     <script src="/plugins/navbar.js"></script>     <!--导航栏-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify/4.13.1/plugins/search.min.js"></script>     <!--搜索栏-->
+    <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>     <!--搜索栏-->
     <script src="/plugins/change/search-highlighter.js"></script>     <!--搜索高亮（改）-->
-    <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>     <!--侧边栏-->
-    <script src="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/docsify-plugin-toc.min.js"></script>     <!--目录-->
-    <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
-    <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>     <!--KaTex-->
-    <script src="/plugins/article.js"></script>     <!--上传时间、更新时间、访问次数、字数、阅读时长和回到开头-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/docsify-copy-code/3.0.0/docsify-copy-code.min.js"></script>     <!--代码复制按钮-->
+    <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>     <!--优化侧边栏-->
+    <script src="//unpkg.com/docsify-plugin-toc/dist/docsify-plugin-toc.min.js"></script>     <!--目录-->
+    <script src="//unpkg.com/katex/dist/katex.min.js"></script>
+    <script src="//unpkg.com/marked@4"></script>
+    <script src="//unpkg.com/docsify-katex/dist/docsify-katex.js"></script>     <!--KaTex-->
+    <script src="/plugins/content.js"></script>     <!--一言、首次上传时间、上次更新时间、访问次数、字数、预计阅读时长和回到开头按钮-->
+    <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>     <!--告示-->
+    <script src="//unpkg.com/docsify/lib/plugins/zoom-image.min.js"></script>     <!--图片放大-->
+    <script src="//unpkg.com/docsify-copy-code/dist/docsify-copy-code.min.js"></script>     <!--代码复制按钮-->
     <script type="module" src="/plugins/waline.js"></script>     <!--Waline-->
     <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>     <!--前后文章导航-->
     <script src="//unpkg.com/docsify-slides/dist/docsify-slides.min.js"></script>     <!--前后文章导航栏-->

@@ -1,12 +1,39 @@
-#app {
+#app {     /*等待提示*/
     font-family: title2-en, title2-zh, cursive;
 }
 
-main {
-    margin-top: 45px;
-    transition: margin-top 0.5s;
+main {     /*主体*/
+    margin-top: 45px;     /*防止被导航栏盖住*/
+    transition: margin-top .5s;     /*配合导航栏移动*/
 }
 
+footer {     /*页脚*/
+    font-size: 12px;
+    font-family: title3-en, title3-zh, cursive;
+}
+
+section.cover footer {     /*在封面时的页脚*/
+    position: fixed;
+    right: 1%;
+    bottom: 0;
+}
+
+main footer {     /*在主体时的页脚*/
+    position: relative;
+    right: -57%;
+    padding-bottom: 5em;
+}
+
+section.cover footer a, footer a {     /*页脚链接*/
+    color: var(--theme-color);
+    text-decoration: none;
+}
+
+section.cover footer a:hover, footer a:hover {     /*鼠标悬停时的页脚链接*/
+    color: var(--theme-color-light);
+}
+
+/*各种级次的中英文字体*/
 @font-face {
     font-family: title0-zh;
     src: url("/assets/fonts/zh/title0.ttf");

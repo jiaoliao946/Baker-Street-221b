@@ -14,23 +14,32 @@
     z-index: 1;
 }
 
-aside.toc-nav {
+.toc-nav {     /*目录*/
     top: 90px;
-    transition: top 0.5s;
-}
-
-.page_toc {
+    transition: top .5s;     /*配合导航栏移动*/
     font-family: title3-en, title3-zh, cursive;
+    --sidebar-nav-link-color: #34495e;     /*平常的字体颜色*/
+    --sidebar-nav-link-color--active: var(--theme-color);     /*悬于时的字体颜色*/
 }
 
-.page_toc div.active {
-    --sidebar-nav-link-color--active: #619ac3;
+.page_toc div.active {     /*目录中被选中的标题*/
+    --sidebar-nav-link-color--hover: var(--theme-color);     /*选中时的字体颜色*/
 }
 
-.page_toc div[class^="lv"] a span {
-    --sidebar-nav-link-color: #34495e;
+.alert.flat.undefined {     /*flat告示中的“重要”*/
+    background-color: #efd9fd;
+    border-color: #e9d7df;
+    color: #302f4b;
 }
 
-.page_toc div[class^="lv"] a:hover span {
-    --sidebar-nav-link-color--active: #619ac3;
+.alert.flat.undefined .title {     /*flat告示中“重要”的标题*/
+    color: #1f2040;
+}
+
+.alert.callout.undefined {     /*callout告示中的“重要”*/
+    border-left-color: #983680;
+}
+
+.alert.callout.undefined .title {     /*callout告示中“重要”的标题*/
+    color: #983680;
 }

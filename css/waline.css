@@ -1,8 +1,8 @@
 :root {
-    --waline-theme-color: #619ac3;
-    --waline-active-color: #8abcd1;
+    --waline-theme-color: var(--theme-color);     /*主题色*/
+    --waline-active-color: var(--theme-color-light);     /*选中色*/
 }
 
-.wl-reaction, .wl-panel, .wl-meta-head, .wl-empty {
+.wl-reaction, .wl-panel, .wl-meta-head, .wl-empty {     /*Waline的各个组件*/
     font-family: title3-en, title3-zh, cursive;
 }
