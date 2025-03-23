@@ -14,7 +14,7 @@
     z-index: 1;
 }
 
-.toc-nav {     /*目录*/
+aside.toc-nav {     /*目录*/
     top: 90px;
     transition: top .5s;     /*配合导航栏移动*/
     font-family: title3-en, title3-zh, cursive;

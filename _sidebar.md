@@ -1,6 +1,7 @@
 - [静态博客搭建](Blog/README)
     - 工作准备
         - [初始化与部署](Blog/Pre/init)
+        - [前端和Docsify基础知识](Blog/Pre/basic)
     - 评论区搭建
         - [初始化与部署](Blog/Waline/init)
 - [MC](MC/README)

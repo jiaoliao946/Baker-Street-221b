@@ -4,9 +4,9 @@
 
 ## 安装JDK
 
-​	Java代码由一系列后缀为.java的源代码文件组成，Java代码不能直接在计算机上运行，需要经过编译后产生若干后缀为.class的文件，这些文件和源代码文件不同，它们属于二进制文件，不能直接打开编辑，通常被称为字节码。用于执行Java字节码的程序被称为Java虚拟机，即JVM（Java Virtual Machine）。
+​	Java代码由一系列后缀为.java的源代码文件组成，Java代码不能直接在计算机上运行，需要经过编译后产生若干后缀为.class的文件，这些文件和源代码文件不同，它们属于二进制文件，不能直接打开编辑，通常被称为字节码。用于执行Java字节码的程序被称为Java虚拟机，即JVM（Java Virtual Machine，Java虚拟机）。
 
-​	JRE（Java Runtime Environment）包含一个JVM，一些Java代码库，还有用于启动JVM并读取Java字节码的包装代码，被用于运行基于Java编写的程序。JDK（Java Development Kit）是JRE的超集，除JRE提供的功能外，JDK同时还提供一些用于开发的工具，比如编译Java代码到Java字节码的工具。
+​	JRE（Java Runtime Environment，Java运行环境）包含一个JVM，一些Java代码库，还有用于启动JVM并读取Java字节码的包装代码，被用于运行基于Java编写的程序。JDK（Java Development Kit，Java开发工具包）是JRE的超集，除JRE提供的功能外，JDK同时还提供一些用于开发的工具，比如编译Java代码到Java字节码的工具。
 
 ​	如果只要运行MC游戏，安装JRE就可以了，但是想要开发模组，就需要安装JDK。众所周知，MC 1.12.2使用的是Java8，可以下载并安装[Oracle官方的JDK8](https://www.oracle.com/java/technologies/downloads/#java8-windows)，不过由于有优化，也推荐使用[阿里巴巴的Dragonwell8](https://dragonwell-jdk.io/)。安装时除了安装位置自行设置，其余选项一律不用在意。
 
@@ -48,4 +48,5 @@ javac -version
 
 ![elephant](./assets/elephant.png)
 
-​	推荐以Github作为项目的代码托管平台，也可以在IntelliJ IDEA登录Github，具体使用参见`通用工具`系列文章中的[Git章节](General/Git/README)。
+> [!IMPORTANT]
+> 《我的世界：Minecraft模组开发指南》。

@@ -2,7 +2,6 @@
     position: fixed;
     z-index: 1;
     top: 0;
-    transition: top .5s;     /*显示与隐藏*/
     width: 100%;
     height: 45px;
     display: flex;
@@ -16,6 +15,7 @@
 }
 
 .navbar-main {     /*在主体时的导航栏*/
+    transition: top .5s;     /*显示与隐藏*/
     background-color: white;     /*背景色*/
     box-shadow: 0 .5px 5px whitesmoke;     /*阴影*/
 }
@@ -48,6 +48,7 @@
 .nav {     /*导航*/
     display: flex;
     align-items: center;
+    cursor: pointer;     /*鼠标悬停时光标改变*/
 }
 
 .nav:hover {     /*鼠标悬停时的导航*/

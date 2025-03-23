@@ -1,6 +1,6 @@
 # 基于Docsify搭建静态博客
 
-> 本系列文章围绕Docsify从零开始讲解搭建静态博客的各方面知识技巧，大部分内容暂时只保证支持Windows系统，适用于所有略懂电脑知识、拥有基本代码能力（甚至不需要学过HTML、CSS和JavaScript）且想要搭建静态博客的读者。
+> 本系列文章围绕Docsify从零开始讲解搭建静态博客的各方面知识技巧，大部分内容暂时只保证支持Windows系统，适用于所有略懂电脑和互联网、拥有基本代码能力（甚至不需要学过HTML、CSS和JavaScript）且想要搭建静态博客的读者。
 
 ### 为什么使用Docsify
 
@@ -14,15 +14,15 @@
 
 ​	Docsify是一个神奇的静态网站生成器，它不构建静态HTML文件，而是动态生成网站，从而支持热重载。它可以加装大量插件，并且想要自己写插件也没有特别困难。
 
-### 参考文档
-
-1. [Docsify官方文档](https://docsify.js.org)；
-2. [Waline官方文档](https://waline.js.org/)。
-
 ### 常用工具
 
-1. [Git](https://git-scm.com/)；
-2. [Github](https://git-scm.com/)；
-3. [Cloudflare Pages](https://www.cloudflare-cn.com/)；
-4. [Visual Studio Code](https://code.visualstudio.com/)；
-5. [Typora](https://typoraio.cn/)。
+1. [Docsify官方文档](https://docsify.js.org)；
+2. [Git](https://git-scm.com/)；
+3. [Github](https://git-scm.com/)；
+4. [Cloudflare Pages](https://www.cloudflare-cn.com/)；
+5. [Visual Studio Code](https://code.visualstudio.com/)；
+6. [Typora](https://typoraio.cn/)；
+7. [MDN Web文档](https://developer.mozilla.org/zh-CN/)；
+8. [现代JavaScript教程](https://zh.javascript.info)；
+9. [菜鸟教程](https://www.runoob.com/)；
+10. [Waline官方文档](https://waline.js.org/)。

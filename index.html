@@ -37,11 +37,10 @@
             coverpage: true,     //加载封面
             onlyCover: true,     //仅封面作为首页
             loadSidebar: true,     //加载侧边栏
-            subMaxLevel: 2,     //侧边栏显示的最大标题级数
             auto2top: true,     //自动到文章开头
             notFoundPage: true,     //404页面
             alias: {     //地址重定向
-                ".*/_sidebar.md": "_sidebar.md",     //侧边栏
+                ".*(?!(About|Wiki))/_sidebar.md": "_sidebar.md",     //文章的侧边栏
                 "(.*)#": "$1"     //修复登录Waline后跳转出错
             },
 
@@ -84,7 +83,7 @@
                 },
                 important: {     //重要
                     icon: "fa fa-star",
-                    label: "重要"
+                    label: "参考"
                 },
                 warning: {     //注意
                     label: "注意"
@@ -117,7 +116,7 @@
     <script src="//unpkg.com/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>     <!--优化侧边栏-->
     <script src="//unpkg.com/docsify-plugin-toc/dist/docsify-plugin-toc.min.js"></script>     <!--目录-->
     <script src="//unpkg.com/katex/dist/katex.min.js"></script>
-    <script src="//unpkg.com/marked@4"></script>
+    <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
     <script src="//unpkg.com/docsify-katex/dist/docsify-katex.js"></script>     <!--KaTex-->
     <script src="/plugins/content.js"></script>     <!--一言、首次上传时间、上次更新时间、访问次数、字数、预计阅读时长和回到开头按钮-->
     <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script>     <!--告示-->

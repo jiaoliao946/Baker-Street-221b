@@ -64,9 +64,14 @@ h3 {     /*三级标题*/
     text-indent: 1.75em;     /*段落首行缩进*/
 }
 
-ol > li::marker, ol > li > p {     /*分点标题及标号*/
+ol > li {     /*分点标题及标号*/
     font-family: title3-en, title3-zh, cursive;
     font-weight: bold;
+}
+
+ol > li > :not(:first-child) {     /*分点标题之外的不变*/
+    font-family: initial;
+    font-weight: initial;
 }
 
 #upDiv {     /*回到开头按钮容器，用于触边显示*/

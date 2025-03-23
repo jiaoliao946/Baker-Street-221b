@@ -37,7 +37,9 @@
 
                 nav[i].prepend(navIcon[i]);     //把图标依次加在对应导航开头
                 d.querySelector("#navbar > ul").append(nav[i]);     //把导航依次加在ul末尾
-                nav[i].onpointerover = () => navIcon[i].play();     //给导航分别添加进入事件（播放图标）
+                nav[i].addEventListener("pointerenter", () => {
+                    navIcon[i].seek(0), navIcon[i].play(); 
+                });     //给导航分别添加进入事件（播放图标）
             }
 
             const construct = (ele, texts, hrefs) => {
