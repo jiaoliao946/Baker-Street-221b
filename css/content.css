@@ -60,7 +60,7 @@ h3 {     /*三级标题*/
     font-family: title3-en, title3-zh, cursive;
 }
 
-#main > p {     /*段落*/
+#main > p, #main > ol > li p:not(:first-child) {     /*段落*/
     text-indent: 1.75em;     /*段落首行缩进*/
 }
 

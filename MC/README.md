@@ -9,7 +9,10 @@
 1. [MC百科](https://www.mcmod.cn/)；
 2. [Minecraft中文Wiki](https://zh.minecraft.wiki/)；
 3. [Minecraft Wiki](https://minecraft.wiki/)；
-4. [Github](https://git-scm.com/)；
+4. [MC百科](https://www.mcmod.cn/)；
+5. [CurseForge Minecraft](https://www.curseforge.com/minecraft)；
+6. [Modrinth](https://modrinth.com/)；
+7. [Github](https://git-scm.com/)；
 
 ### 开发工具
 

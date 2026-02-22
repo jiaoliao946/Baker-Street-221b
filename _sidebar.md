@@ -8,9 +8,31 @@
     - [1.12.2模组开发](MC/Mod12/README)
         - 工作准备
             - [环境搭建](MC/Mod12/Pre/environment)
-            - [Java基础知识](MC/Mod12/Pre/java)
-            - [模组基础知识](MC/Mod12/Pre/mod)
+            - [Java基本知识](MC/Mod12/Pre/java)
+            - [模组基本知识](MC/Mod12/Pre/mod)
+            - [首次构建](MC/Mod12/Pre/init)
+            - [初级概念](MC/Mod12/Pre/pri)
+        - 基本操作
+            - [物品添加](MC/Mod12/Base/item)
+            - [创造模式物品栏添加](MC/Mod12/Base/tab)
+            - [方块添加](MC/Mod12/Base/block)
+            - [矿物词典和合成配方](MC/Mod12/Base/ore-dict)
+        - 进阶打法
+            - [高级概念](MC/Mod12/Advance/sup)
+        - Coremod
+            - [简介](MC/Mod12/Coremod/coremod)
+            - [Access Transformer](MC/Mod12/Coremod/at)
+            - [Mixin](MC/Mod12/Coremod/mixin)
+            - [ASM Transformer](MC/Mod12/Coremod/asmt)
+        - 实战
+            - [蜕变：装饰](MC/Mod12/Practice/civ_dec)
     - [1.12.2整合包开发](MC/Modpack12/README)
+- [AI](AI/README)
+    - [实用技巧](AI/Skill/README)
+        - [A卡部署Pytorch](AI/Skill/amd)
+        - [《动手学深度学习》补充](AI/Skill/d2l_addons)
+    - [实战项目](AI/Practice/README)
+        - [Pixel Art GAN](AI/Practice/pagan)
 - [通用工具](General/README)
     - [Git](General/Git/README)
         - [Git](General/Git/git)

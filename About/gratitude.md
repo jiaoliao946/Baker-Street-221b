@@ -1,3 +1,3 @@
 # 鸣谢
 
-docsify、hitokoto、waline、icon8
+Docsify、Hitokoto、Waline、Icon8

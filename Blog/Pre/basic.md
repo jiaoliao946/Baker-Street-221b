@@ -98,7 +98,7 @@
 
 3. 插入方式
 
-    共有三种插入方式：
+    ​	共有三种插入方式：
 
     - 外部样式表：使用`<link>`元素链接到样式表，比如`<link rel="stylesheet" href="mystyle.css"/>`
         - `rel="stylesheet"`表示链接的是一个样式表；
@@ -123,8 +123,8 @@
         ```html
         <p style="color:sienna;margin-left:20px">这是一个段落。</p>
         ```
-
-    多个样式指向同一元素时，作用优先级通常为：内联样式>内/外部样式（后面的覆盖前面的）>浏览器默认样式，优先级规则具体见[层叠、优先级与继承](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts#%E4%BC%98%E5%85%88%E7%BA%A7_2)。
+    
+    ​	多个样式指向同一元素时，作用优先级通常为：内联样式>内/外部样式（后面的覆盖前面的）>浏览器默认样式，优先级规则具体见[层叠、优先级与继承](https://developer.mozilla.org/zh-CN/docs/Learn_web_development/Core/Styling_basics/Handling_conflicts#%E4%BC%98%E5%85%88%E7%BA%A7_2)。
 
 ## JavaScript
 
@@ -179,11 +179,11 @@
 
 3. `<meta/>`——[`meta`元素](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/meta)
 
-    说明该HTML文档的元数据。
+    ​	说明该HTML文档的元数据。
 
 4. `<meta charset="UTF-8">`
 
-    说明该HTML文档采用UTF-8编码，否则中文会显示为乱码。
+    ​	说明该HTML文档采用UTF-8编码，否则中文会显示为乱码。
 
 5. `<title>Document</title>`——[`title`元素](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/title)
 
@@ -193,11 +193,11 @@
 
 6. `<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />`
 
-    指定IE8浏览器去模拟某个特定版本浏览器的渲染方式，从而解决部分兼容问题。
+    ​	指定IE8浏览器去模拟某个特定版本浏览器的渲染方式，从而解决部分兼容问题。
 
 7. `<meta name="description" content="Description">`
 
-    设置页面的描述文本，用于搜索引擎。
+    ​	设置页面的描述文本，用于搜索引擎。
 
 8. `<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">`
 
@@ -208,11 +208,11 @@
 
 9. `<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">`——[`link`元素](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/link)
 
-    引入外部样式表，此处用于设置Docsify主题，所有主题见[Themes](https://docsify.js.org/#/themes)；
+    ​	引入外部样式表，此处用于设置Docsify主题，所有主题见[Themes](https://docsify.js.org/#/themes)；
 
 10. `<body></body>`——[`<body>`元素](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/body)
 
-    HTML文档的主体元素，一个HTML文档只能有一个。
+    ​	HTML文档的主体元素，一个HTML文档只能有一个。
 
 11. `<div id="app"></div>`——[`<div>`元素](https://developer.mozilla.org/zh-CN/docs/Web/HTML/Element/div)
 
@@ -229,11 +229,11 @@
         </script>
     ```
 
-    引入JS，`window.$docsify`的内容用于配置Docsify。
+    ​	引入JS，`window.$docsify`的内容用于配置Docsify。
 
 13. `<script src="//cdn.jsdelivr.net/npm/docsify@4"></script>`
 
-    引入外部JS，此处用于加载Docsify相关JS。
+    ​	引入外部JS，此处用于加载Docsify相关JS。
 
 > [!IMPORTANT]
 > [MDN Web文档](https://developer.mozilla.org/zh-CN/)；
@@ -242,4 +242,4 @@
 > 
 > [菜鸟教程](https://www.runoob.com/)；
 > 
-> [HTML中Meta属性http-equiv="X-UA-Compatible"详解](https://www.cnblogs.com/zxx193/p/3368236.html)；
+> [HTML中Meta属性http-equiv="X-UA-Compatible"详解](https://www.cnblogs.com/zxx193/p/3368236.html)。
